@@ -1,0 +1,56 @@
+.Start_of_the_line
+{
+    width: 95%;
+    height: max-content;
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: snow;
+    position: relative;
+    top: 10px;
+    left: 2.5%;
+    gap: 5%;
+    border-radius: 10px;
+}
+.User_and_level
+{
+    background-image: linear-gradient(#0f1018,#07070c, #101018);
+    position: relative;
+    left: 38%;
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+.User_and_level img
+{
+    width: 50%;
+    border-radius: 10px;
+}
+.User_and_level:hover
+{
+    background-image: linear-gradient(#202336,#0e0f18, #12121a);
+    box-shadow: 10px 10px 10px black;
+}
+.There_top_of_the_klingdome
+{
+    position: relative;
+    top: 10px;
+}
+.Title
+{
+    position: relative;
+    bottom: 21px;
+    left: 25%;
+}
+.Level_two
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Level_three
+{
+    display: grid;
+    grid-template-columns: 35% 35% 10%;
+}

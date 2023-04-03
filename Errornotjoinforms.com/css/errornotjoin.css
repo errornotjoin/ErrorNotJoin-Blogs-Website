@@ -1,0 +1,74 @@
+.Main_pf
+{
+    background-image: linear-gradient(#282b41,#202236, #1b1b27);
+    width: 10%;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    text-align: center;
+    
+    color: snow;
+    height: max-content;
+}
+.Main_pf img
+{
+    position: relative;
+    top: 10px;
+    width: 40%;
+    border-radius: 100px;
+    border: 4px black solid;
+    
+}
+.Viewing_ot
+{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 45% 45%;
+}
+.subscribers_join
+{
+    text-align: center;
+    color: snow;
+    position: relative;
+    top: 30px;
+    background-image: linear-gradient(#282b41,#202236, #2c2c3f);
+    width: 10%;
+    height: 400px;
+    border-radius: 10px;
+}
+.People_just_subscribe
+{
+    position: relative;
+    left: 5%;
+    background-color: #1b1b27;
+    width: 90%;
+    height: 300px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction:column;
+    gap: 5%;
+}
+.Title
+{
+    color: snow;
+    position: relative;
+    left: 20%;
+    bottom: 21px;
+    width: 55%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+}
+
+.New_subs_users
+{
+    background-color: #282b41;
+    display: flex;
+}
+.New_subs_users img
+{
+    width: 45%;
+    border-radius: 10px;
+}

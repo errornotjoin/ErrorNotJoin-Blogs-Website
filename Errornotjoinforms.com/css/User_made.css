@@ -1,0 +1,24 @@
+.InFo, .About
+{
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    width: 10%;
+    text-align: center;
+    color: snow;
+    border-radius: 10px;
+}
+.InFo div
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Title
+{
+    position: relative;
+    left: 20%;
+    bottom: 21px;
+}
+.Main_webste_footer
+{
+    position: relative;
+    top: 400px;
+}

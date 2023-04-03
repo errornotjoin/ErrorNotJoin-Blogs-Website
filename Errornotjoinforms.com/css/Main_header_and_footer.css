@@ -1,0 +1,127 @@
+body
+{
+    background-color: rgb(9, 10, 19);
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a
+{
+    color: rgb(182, 178, 178);
+    text-decoration: none;
+}
+a:active
+{
+    color: rgb(29, 46, 61);
+}
+a:hover
+{
+    color: snow;
+    text-shadow: 5px 5px 5px black;
+}
+input:hover,button:hover
+{
+    background-image: linear-gradient(#4c527a,#3d4166, #262636);
+    box-shadow: 10px 10px 10px black;
+    animation: Loading 1s;
+}
+.Title
+{
+    color: snow;
+    width: 55%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+}
+.Main_header
+{
+    color: snow;
+    display: flex;
+    flex-direction: row;
+    gap: 8%;
+    background-color: #181a29;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    height: 55px;
+    text-shadow: 5px 5px 5px black;
+}
+.Main_webste_footer
+{
+    width: 100%;
+    background-color: #1a1c2c;
+    display: flex;
+    position: relative;
+    top: 110px;
+    color: snow;
+    gap: 7%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    text-align: center;
+}
+.Main_form_bit{
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    height: 750px;
+    width: 86%;
+    position: absolute;
+    left: 12%;
+    bottom: 120px;
+    border-radius: 10px;
+}
+.Unknow_name
+{
+     overflow-y: scroll;
+     overflow-x: hidden;
+    height: 630px;
+    display: flex;
+    flex-direction:column;
+    gap: 3%;
+}
+.Form_Items
+{
+    position: relative;
+    left: 3%;
+    width: 95%;
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    display:grid;
+    grid-template-columns: 35% 50% 20%;
+    color: snow;
+}
+.Form_Items_User
+{
+    display: grid;
+    grid-template-columns: 45% 45%;
+}
+.Form_Items_User:hover
+{
+    width: 75%;
+    border-radius: 10px;
+    background-image: linear-gradient(#383c5a,#373a5e, #3b3b53);
+}
+.Form_Items:hover,.New_subs_users:hover
+{
+    background-image: linear-gradient(#282b41,#202236, #1b1b27);
+    box-shadow: 10px 10px 10px black;
+}
+::-webkit-scrollbar
+{
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-image: linear-gradient(#282b41,#202236, #1b1b27);
+}
+@keyframes Loading {
+    0%
+    {
+        text-shadow: 0px 0px 0px black;
+        box-shadow: 0px 0px 0px black;
+        border: #202336 0px solid;
+    }
+    100%
+    {
+        text-shadow: 10px 10px 10px black;
+        border: #202336 3px solid;
+        box-shadow: 10px 10px 10px black;
+    }
+}
