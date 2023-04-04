@@ -8,7 +8,7 @@
     <link href="css/Main_header_and_footer.css" rel="stylesheet">
     <link href="css/sign_up.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="imgs/errornotjoin.png"> 
-    <title>Sign Up - ErrorNotJoin Blogs</title>
+    <title id="Sign_in">Sign Up - ErrorNotJoin</title>
 </head>
 <body>
     <header class="Main_header">
@@ -19,21 +19,21 @@
         <h1><u>Sign Up</u></h1>
     </header>
     <main>
-        <form class="Main_form">
+        <div class="Main_form">
             <div class="main_items">
                 <h1>Email</h1>
                 <input type="email" placeholder="Put Your Email Here" required>
                 <h1>User Name</h1>
-                <input placeholder="Put Your User Name Here" type="text" minlength="5" required>
+                <input id="Sign_Up_User_name" placeholder="Put Your User Name Here" type="text" minlength="5" required>
                 <h1>Password</h1>
-                <input type="password" minlength="10" placeholder="Put Your Passworld Here" required>
+                <input id="Sign_Up_Passworld" type="password" minlength="10" placeholder="Put Your Passworld Here" required>
                 <p>You Got An Account, You Can Goto <a href="login.html">login</a></p>
             </div>
             <div class="Other_things">
                 <button type="reset">Reset</button>
-                <button>Submit</button>
+                <button id="Sign_up_account">Submit</button>
             </div>
-        </form>
+        </div>
     </main>
     <footer class="Main_webste_footer">
         <div>
@@ -68,5 +68,6 @@
             <p>This Website Dose Not Have any cookies<br> <strong>AND</strong><br> Keep/Save Any Date and email From You </p>
         </div>
     </footer>    
+    <script src="js/Making_saveing_account.js"></script>
 </body>
 </html>

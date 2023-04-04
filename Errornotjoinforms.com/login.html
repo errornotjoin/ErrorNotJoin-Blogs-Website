@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - ErrorNotJoin Blogs</title>
+    <title id="Sign_in">Sign in - ErrorNotJoin</title>
     <link rel="shortcut icon" type="image/png" href="imgs/errornotjoin.png"> 
     <link href="css/Main_header_and_footer.css" rel="stylesheet">
     <link href="css/login.css" rel="stylesheet">
@@ -15,17 +15,17 @@
         <h1></h1>
         <h1></h1>
         <h1></h1>
-        <h1><u>login</u></h1>
+        <h1><u>Sign in</u></h1>
     </header>
     <main >
         <div class="Main_body_for_items">
             <div>
-                <form class="Main_form">
+                <div class="Main_form">
                     <div class="Main_Inputs">
                         <h1><u>User Name</u></h1>
-                        <input type="text" placeholder="Put Your User name here" required="true">
+                        <input type="text" id="Sing_in_user_name" placeholder="Put Your User name here" required="true">
                      <h1>Passworld</h1>
-                     <input type="password" minlength="2" placeholder="Put Your Passworld Here" required="true">
+                     <input id="Sing_in_Password" type="password" minlength="2" placeholder="Put Your Passworld Here" required="true">
                     
                     </div>
 
@@ -38,9 +38,8 @@
                     </div>
                     <div class="Somethings" >
                         <input type="reset" placeholder="reset">
-                        <input  type="submit" value="Submit" placeholder="Submit">
-                    </div>
-                </form>
+                        <button id="sign_in_input"   placeholder="Submit">Test</button>                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -79,5 +78,6 @@
             <p>This Website Dose Not Have any cookies<br> <strong>AND</strong><br> Keep Any Date From You </p>
         </div>
     </footer>
+    <script src="js/Making_saveing_account.js"></script>
 </body>
 </html>
