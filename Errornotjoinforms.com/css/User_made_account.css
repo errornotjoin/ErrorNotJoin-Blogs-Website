@@ -1,0 +1,92 @@
+.User_made_account,.Bottom_Itmes
+{
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    width: 20%;
+    position: relative;
+    top: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    text-align: center;
+    color: snow;
+}
+.User_made_account
+{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.User_made_account img
+{
+    width: 50%;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+.Bottom_Itmes
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+   border-top-right-radius: 0px;
+   border-top-left-radius: 0px;
+}
+.Title
+{
+    position: relative;
+    left: 20%;
+}
+.What_i_made
+{
+    position: relative;
+    left: 21%;
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    width: 79%;
+    border-radius: 10px;
+    text-align: center;
+    bottom: 460px;
+}
+.error
+{
+    width: 90%;
+    background-image: linear-gradient(#0f1018,#07070c, #101018);
+    text-align: left;
+    position: relative;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 25% 45% 30%;
+}
+.CreatIng_div
+{
+    position: relative;
+    left: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    width: 60%;
+    position: relative;
+    bottom: 440px;
+    color: snow;
+    border-radius: 10px;
+}
+
+.CreatIng_div input, .CreatIng_div button,.CreatIng_div textarea
+{
+    width: 95%;
+    background-color: #1f1f30;
+    color: snow;
+    border: none;
+    height: 20px;
+    border-radius: 10px;
+    font-size: medium;
+    text-align: center;
+}
+.CreatIng_div textarea
+{
+    height: 200px;
+}
+.Div_in_div, .button_in_a_div
+{ 
+    position: relative;
+    left: 5%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+
+}
