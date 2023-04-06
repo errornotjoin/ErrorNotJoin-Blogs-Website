@@ -1,0 +1,33 @@
+.Main_background
+{
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+    height: 200px;
+}
+.Sec_background
+{
+    background-color: #202030;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    text-align: center;
+    gap: 1%;
+    top: 20px;
+    height: 150px;
+    border-radius: 5px;
+}
+.Div_a
+{
+    position: relative;
+    left: 6%;
+    background-color: #181a27;
+    border-radius: 10px;
+    height: 100px;
+}
