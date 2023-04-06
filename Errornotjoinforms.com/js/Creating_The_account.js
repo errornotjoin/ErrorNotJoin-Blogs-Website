@@ -1,7 +1,9 @@
 var Makeing_The_account = document.getElementById("Makeing_The_account")
+var CreatIng_div = document.getElementById("CreatIng_div")
+var What_i_made =document.getElementById("What_i_made")
 Makeing_The_account.addEventListener("click", function Add_the_new_info()
 {
-    var CreatIng_div = document.getElementById("CreatIng_div")
+
     CreatIng_div.style.display = "Block"
     What_i_made.style.display = "none"
 })
@@ -16,6 +18,10 @@ Submit_for_user_ceating_account.addEventListener("click", function adding_the_ne
        if(x == 4 || User_new_info.value != "<script>")
        {
         User_old_info.innerHTML = User_new_info.value
+       
+        CreatIng_div.style.display = "none"
+        What_i_made.style.display = "none"
+
        }
        else if(User_new_info.value == "<script>")
        {
