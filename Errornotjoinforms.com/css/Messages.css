@@ -1,205 +1,158 @@
 .Main_Main
 {
-    display: grid;
-    grid-template-columns: 15% 20% 75%;
-    
+    display: flex;
+    flex-direction: row;
+   
     position: relative;
     top: 10px;
-    color: snow;
-    text-align: center;
-
+}
+.Title
+{
+    position: relative;
+    left: 20%;
+    bottom: 20px;
+    
 }
 .User_Status
 {
-    background-image: linear-gradient(#181a27,#0e0f18, #101018);
-    width: 100%;
-    border-top-left-radius: 10px;
+    background-image: linear-gradient(#2a2d44,#1b1d2e, #101018);
+    width: 10%;
     border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+    box-shadow: 5px 0px 10px black;
     z-index: 1;
-    box-shadow: 5px 0px 5px black;
 }
 .Main_divs_are_here
 {
-     display: grid;
-     grid-template-rows: 40% 40% 30%;
-     gap: 5%;
-     text-align: center;
-     
+    display: flex;
+    flex-direction: column;
+    
 }
-.div_1 img
-{ 
-    position: relative;
-   
+.div_1
+{
+    padding-top: 40px;
+}
+.User_Status img
+{
     width: 50%;
     border-radius: 10px;
 }
 .Messages
 {
-
     background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    text-align: center;
+    color: snow;
+    width: 100%;
+    overflow-y: scroll;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
 }
 .Messages_div
 {
-    overflow-y: scroll;
     position: relative;
     left: 3%;
 }
-.Main_messages:hover ,.Main_part_of_messages:hover
+.Main_messages
 {
-box-shadow: 0px 10px 10px black;
-background-image: linear-gradient(#282b41,#202236, #1b1b27);
-border-radius: 10px;
+    background-color: #1b1d2e;
+    border-radius: 5px;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+}
+.Main_messages:hover,.Title:hover
+{
+    background-image: linear-gradient(#2a2d44,#1b1d2e, #101018);
+    box-shadow: 0px 5px 10px black;
+}
+@keyframes Desc_The_width {
+    0%
+    {
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    100%
+    {
+        width: 30%;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+}
+@keyframes inc_The_width {
+    0%{width: 0%;}
+    100%
+    {
+        width: 100%;
+    }
+    
 }
 .Chating_one
 {
-    width: 87%;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    background-image: linear-gradient(#2a2d44,#1b1d2e, #101018);
     z-index: 1;
     box-shadow: -5px 0px 5px black;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-.The_messages_by_the_bot
-{
-    display: flex;
-    width: 60%;
-    display:flex;
-    flex-direction: row;
-    gap: 1%;
-}
-.Main_part_of_messages
-{
-    display: flex;
-    background-color: #1b1b27;
     width: 100%;
-    text-align: center;
-    border-radius: 10px;
-    max-width: 60%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline;
 }
-.Main_part_of_messages a
-{
-
-    font-size: large;
-}
-.The_messages_by_the_bot:hover .The_timer
-{
-    display: inherit;
-    text-shadow: 5px 5px 5px black;
-}
-.the_messages
-{
-    position: relative;
-    top: 5px;
-    left: 5%;
-    text-align: center;
-}
-.The_timer
-{
-    position: relative;
-
-    display: none;
-    color: rgb(133, 129, 129);
-
-    font-size: large;
-
-    width: 25%;
-}
-
 .Main_inputs
 {
-    position:relative;
-    top: 370px;
-    text-align: center;
-    background-color:#2d2d41;
+    background-image: linear-gradient(#181a27,#0e0f18, #191925);
     width: 100%;
-    border-radius: 5px;
     height: 70px;
-    box-shadow: 0px -5px 10px black;
-    
+    position: relative;
+    top: 00px;
+    right:0%;
+    text-align: center;
+    border-radius: 5px;
 }
 .Main_inputs input
 {
-    height: 50px;
-    width: 91%;
     position: relative;
     top: 10px;
-    border: none;
+    width: 90%;
+    height: 50px;
     background-color: #0e0f18;
-    border-radius: 5px;
+    border: none;
+    border-radius: 10px;
     color: snow;
 }
 .Main_inputs button
 {
-    height: 50px;
     position: relative;
     top: 10px;
-    border: none;
-    width: 7%;
-    border-radius: 5px;
-    background-color: #0e0f18;
+    background-color: #1b1d2e;
     color: snow;
+    border: none;
+    width: 5%;
+    height: 40px;
 }
-.Title
+.The_Bot_Messages
+{
+    display: flex;
+    gap: 10%;
+    width: 35%;
+    background-color:#2a2d44 ;
+    height: 50px;
+    color: snow;
+    max-width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    left: 1%;
+    top: 10px;
+}
+.Something
 {
     position: relative;
-    left: 25%;
-    bottom: 15px;
-}
-@media (max-width:1417px) {
-    .Main_inputs
-    {
-        position: relative;
-        top: 440px;
-    }
-}
-@media (max-width: 950px) {
-    .Main_Main
-    {
-        display: flex;
-        flex-direction: column;
-    }
-    .User_Status
-    {
-        height: 180px;
-        box-shadow: 0px 10px 10px black;
-    }
-    .Main_divs_are_here
-    {
-        display: flex;
-        flex-direction: row;
-    }
-    .Main_divs_are_here img
-    {
-        width: 100%;
-    }
-    .Messages
-    {
-        height: 400px;
-    }
-    .Messages_div
-    {
-        display: flex;
-        flex-direction: row;
-        gap: 6%;
-        width: 97%;
-        overflow-y:none;
-        overflow-x: scroll;
-    }
-    .Main_messages
-    {
-        border-radius: 10px;
-    }
-    .Chating_one
-    {
-        width: 100%;
-        height: 600px;
-        box-shadow: 0px -10px 10px black ;
-    }
-    .Main_inputs
-    {
-        position: relative;
-        top: 400px;
-    }
+    background-image: linear-gradient(#181a27,#0e0f18, #101018);
+    height: 500px;
+    width: 95%;
+    left: 3%;
+    border-radius: 10px;
 }
