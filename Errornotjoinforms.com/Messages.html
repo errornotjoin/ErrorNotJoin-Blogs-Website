@@ -48,8 +48,8 @@
         <div class="Messages" id="Messages">
             <h1 class="Title">Your Messages</h1>
                 <div class="Messages_div">
-                    <div class="Main_messages" onclick="getting_the_NPC_name('King of Error')">
-                        <h1>King Of Error</h1>
+                    <div class="Main_messages" onclick="Getting_The_Items_and_Numbers('1')">
+                        <h1 id="Name_1">King Of Error</h1>
                         <p>
                             Last messages Sent By King Of Something<br> Hello There New User<br>
                             at <time>14:40pm</time><br>
@@ -58,8 +58,8 @@
                             </div>
                         </p>
                     </div>
-                    <div class="Main_messages" onclick="getting_the_NPC_name('Lord Cuts')">
-                        <h1>Lorem</h1>
+                    <div class="Main_messages" onclick="Getting_The_Items_and_Numbers('2')">
+                        <h1 id="Name_2">Lorem</h1>
                         <p>
                             Last messages: Will Welcome Here New user<br>
                             at <time>14:40pm</time><br>
@@ -68,8 +68,8 @@
                             </div>
                         </p>
                     </div>
-                    <div class="Main_messages" onclick="getting_the_NPC_name('Lord Cheese')">
-                        <h1>cheese</h1>
+                    <div class="Main_messages" onclick="Getting_The_Items_and_Numbers('3')">
+                        <h1 id="Name_3">cheese</h1>
                         <p>
                             Last messages: <strong>You The New User</strong>  <br>
                             at <time>11:20am</time><br>
@@ -86,25 +86,13 @@
                 <div class="Something">
                     <div class="The_messages_by_the_bot" id="The_messages_by_the_bot">
                         <div id="Messages_1">
-                            <div class="The_Bot_Messages" id="The_First_Text">
-                                <a><p>King of Error:</p></a>
-                                <p>Hello There New User</p>
-                                <p><time>@14:30pm</time></p>
-                            </div>
+
                         </div>
                         <div id="Messages_2">
-                            <div class="The_Bot_Messages" id="The_First_Text">
-                                <a><p>King of Cuts:</p></a>
-                                <p>Welcome Here, New User</p>
-                                <p><time>@14:00pm</time></p>
-                            </div>
+
                         </div>
                         <div id="Messages_3">
-                            <div class="The_Bot_Messages" id="The_First_Text">
-                                <a><p>King of Cheese:</p></a>
-                                <p>Are You The New User?</p>
-                                <p><time>@14:30pm</time></p>
-                            </div>
+
                         </div>
                     </div>
                     <div class="The_messages_by_the_user">
@@ -116,7 +104,7 @@
 
             </div>
             <div class="Main_inputs">
-                <input id="User_Input" type="text" spellcheck="true" required="true" placeholder="Put Text Here">
+                <input id="User_Input" type="text"  placeholder="Put Text Here">
                 <button id="Submit">Submit</button>
             </div>
         </div>

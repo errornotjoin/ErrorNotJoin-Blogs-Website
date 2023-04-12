@@ -1,124 +1,108 @@
-var is_The_People_messeges_opne = false
-var Messages = document.getElementById("Messages")
+var Open_or_close = false
 var Chating_one = document.getElementById("Chating_one")
-function getting_the_NPC_name(User_name)
+var Messages = document.getElementById("Messages")
+var You_is_this_going = document.getElementById("You_is_this_going")
+var Submit = document.getElementById("Submit")
+var User_Input = document.getElementById("User_Input")
+var The_number = ""
+var The_bot_name = ""
+function Getting_The_Items_and_Numbers(Numbers)
 {
-  switch(User_name)
-  {
-    case "King of Error":
-      Open_And_Letting_the_user_to_talk(User_name, 1)
-    break;
-    case "Lord Cuts":
-      Open_And_Letting_the_user_to_talk(User_name, 2)
-    break;
-    case "Lord Cheese":
-      Open_And_Letting_the_user_to_talk(User_name, 3)
-    break;
-  }
-}
-function Open_And_Letting_the_user_to_talk(User_name, Numberss)
-{
-  if(is_The_People_messeges_opne == true)
-  {
-    Doing_things(User_name, Numberss)
-  }
-  else
-  {
-    Messages.style.animation = "Desc_The_width 2s"
-    Chating_one.style.animation = "inc_The_width 3s "
-    Chating_one.style.display = "inline"
-    setTimeout(Messages.style.width = "30%", Messages.style.borderTopRightRadius = "0px", Messages.style.borderBottomRightRadius = "0px", 2000)
-    is_The_People_messeges_opne = true
-    Doing_things(User_name, Numberss)
-  }
-}
-
-function Doing_things(User_name, Numberss)
-{
-  var You_is_this_going = document.getElementById("You_is_this_going")
-  You_is_this_going.textContent = User_name
-  for(var x = 1; x <=3; x++)
-  {
-    if(x == Numberss)
+    
+    for(x = 1; x < 4; x++)
     {
-      var Messages_2 = document.getElementById("Messages_" + Numberss)
-      var User_1 = document.getElementById("User_" + Numberss)
-      Messages_2.style.display = "inline"
-      User_1.style.display = "inline"
+        var Messages_Picker = document.getElementById("Messages_" + x)
+        var User_1 = document.getElementById("User_" + x )
+        if(x == Numbers)
+        {
+            var Name_3 = document.getElementById("Name_" + Numbers)
+            You_is_this_going.textContent = Name_3.textContent
+            Messages_Picker.style.display = "inline"
+            User_1.style.display = "inline"
+            console.log(Numbers);
+            The_number = Numbers
+            The_bot_name = Name_3.textContent
+            
+        }
+        else
+        {
+            User_1.style.display = "none"
+            Messages_Picker.style.display = "none"
+        }
+
+    }
+    if(Open_or_close == false)
+    {
+        Open_or_close = true
+        Chating_one.style.display = "inline"
+        Chating_one.style.animation = "inc_The_width 2s"
+        Messages.style.animation = "Desc_The_width 2s"
+        setTimeout(The_New_style, 2000)
     }
 
-    else
-    {
-      var Messages_2 = document.getElementById("Messages_" + x )
-      var User_1 = document.getElementById("User_" + x)
-      Messages_2.style.display = "none"
-      User_1.style.display = "none"
-    }
-   
-  }
-  Letting_the_user_talk(User_name, Numberss)
-}
 
-function Letting_the_user_talk(User_name , Numberss)
+}
+Submit.addEventListener("click", function New_updateing(New_number)
 {
-    var User_Input = document.getElementById("User_Input")
-    var Submit = document.getElementById("Submit")
+    var A_lot_of_hellos = ["Hello", "Hi", "Yo"]
+    var Agin = ["I'm Ok", "I'm good", "I'm Fine", "Im ok how you"]
+    var a = ["My Name Is: " + The_bot_name, "Why", "My name is; " + The_bot_name + " What Is Yours"]
     var The_aw = ""
-    var Random_aw = ["You Can See My Name Top Of This Messeges", "My User Name Is " + User_name, "I Don't Know"]
-    var Random_aw1 = ["Hi", "Hello", "yo"]
-    Submit.addEventListener("click", function Add_Items()
+    console.log(The_number);
+    switch(User_Input.value)
     {
-      switch(User_Input.value)
-      {
         case "Hello":
-        case "hi":
-        case "Hi":
         case "hello":
-          var Random = Math.round(Math.random() * Random_aw1.length)
-          The_aw = Random_aw1[Random]
-          Making_The_bot_bob(The_aw, Numberss, User_name)
+        case "Hi":
+        case "hi":
+        case "Yo":
+          var What = Math.round(Math.random() * 2)
+          The_aw = A_lot_of_hellos[What]
+          Making_the_items_for_the_user_and_bot(The_aw)
         break;
-        case "Who Are You":
-        case "who are you":
-          The_aw = "Testing......"
-          Making_The_bot_bob(The_aw, Numberss, User_name)
+        case "How Are You":
+        case "Hows You":
+        case "Are You Ok":
+        case "how are you":
+        case "how you":
+            var What = Math.round(Math.random() * 3)
+            The_aw = Agin[What]
+            Making_the_items_for_the_user_and_bot(The_aw)
         break;
+        case "What Is Your Name":
         case "what is your name":
-        case "Your Name Is ?":
-        case "your name is ?":
-        case "your name is?":
-          var Random = Math.round(Math.random() * Random_aw.length)
-          The_aw = Random_aw[Random]
-          Making_The_bot_bob(The_aw, Numberss, User_name)
+            var What = Math.round(Math.random() * 2)
+            The_aw = a[What]
+            Making_the_items_for_the_user_and_bot(The_aw)
         break;
 
-      }
-    })
-}
-function Making_The_bot_bob(The_aw, Numberss, User_name)
+    }
+})
+function Making_the_items_for_the_user_and_bot(The_aw)
 {
-  var User_time = Date.now()
-  
-  
-  //Makeing/Getting The Bot
-  var Messages_2 = document.getElementById("Messages_" + Numberss)
-  var The_body = document.createElement("div")
-  
-  var getting_the_user = document.createElement("a")
-  var The_user_name = document.createElement("p")
-  var The_bot_text = document.createElement("p")
-  var The_time_that_it_sent = document.createElement("p")
-  //the Class Name 
-  The_body.className = "The_Bot_Messages"
-  //The TextContent 
-    The_user_name.textContent = User_name
-    The_bot_text.textContent = The_aw
-    The_time_that_it_sent.textContent = User_time
-  //append
-
-  Messages_2.appendChild(The_body)
-  The_body.appendChild(getting_the_user)
-  getting_the_user.appendChild(The_user_name)
-  The_body.appendChild(The_bot_text)
-  The_body.appendChild(The_time_that_it_sent)
+    //getting/making the items
+    var the_Background = document.getElementById("Messages_" + The_number)
+    var The_body = document.createElement("div")
+    var The_user_Name_Ling = document.createElement("a")
+    var The_text_for_the_TUNL = document.createElement("p")
+    var The_main_text = document.createElement("p")
+    //the class name
+    The_body.className = "The_Bot_Messages"
+    //textconte
+    The_text_for_the_TUNL.textContent = The_bot_name
+    The_main_text.textContent = The_aw
+    //appenchild(What Is Going on here)
+    the_Background.appendChild(The_body)
+    The_body.appendChild(The_user_Name_Ling)
+    The_body.appendChild(The_main_text)
+    The_user_Name_Ling.appendChild(The_text_for_the_TUNL)
+    //
+    
+}
+function The_New_style()
+{
+    Messages.style.width = "30%"
+    Messages.style.borderTopRightRadius = "0px"
+    Messages.style.borderBottomRightRadius = "0px"
+    Chating_one.style.width = "100%"
 }
