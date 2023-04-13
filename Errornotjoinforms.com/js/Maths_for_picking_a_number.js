@@ -10,6 +10,9 @@ var Main_code = document.getElementById("Main_code")
 var Amout = 0 
 switch(Main_code.textContent)
 {
+    case"ErrorNotjoin - ErrorNotJoin Blogs":
+        Amout = 1
+    break;
     case "User Made Forms":
         Amout = 3
     break;

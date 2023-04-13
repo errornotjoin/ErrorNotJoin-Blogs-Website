@@ -6,13 +6,14 @@ var Submit = document.getElementById("Submit")
 var User_Input = document.getElementById("User_Input")
 var The_number = ""
 var The_bot_name = ""
+var The_aw = ""
 function Getting_The_Items_and_Numbers(Numbers)
 {
     
     for(x = 1; x < 4; x++)
     {
         var Messages_Picker = document.getElementById("Messages_" + x)
-        var User_1 = document.getElementById("User_" + x )
+        var Name_3 = document.getElementById("Name_" + x )
         if(x == Numbers)
         {
             You_is_this_going.textContent = Name_3.textContent
@@ -45,7 +46,7 @@ Submit.addEventListener("click", function New_updateing(New_number)
     var A_lot_of_hellos = ["Hello", "Hi", "Yo"]
     var Agin = ["I'm Ok", "I'm good", "I'm Fine", "Im ok how you"]
     var a = ["My Name Is: " + The_bot_name, "Why", "My name is; " + The_bot_name + " What Is Yours"]
-    var The_aw = ""
+ 
     console.log(The_number);
     switch(User_Input.value)
     {
@@ -73,6 +74,9 @@ Submit.addEventListener("click", function New_updateing(New_number)
             The_aw = a[What]
             Making_the_items_for_the_user_and_bot(The_aw, User_Input.value)
         break;
+        case "Help":
+        case "What Can You Do":
+        case "what can you do":
 
     }
 })
@@ -81,6 +85,7 @@ function Making_the_items_for_the_user_and_bot(The_aw, The_USer_text)
     
     //Making The User Items/Getting
     var the_Background = document.getElementById("Messages_" + The_number)
+
     var The_User_body = document.createElement("div")
     var The_link_to_the_user = document.createElement("a")
     var The_name_of_the_user = document.createElement("p")
@@ -97,24 +102,33 @@ function Making_the_items_for_the_user_and_bot(The_aw, The_USer_text)
     The_link_to_the_user.appendChild(The_name_of_the_user)
 
     //getting/making the items
+    var Items_random = Math.round(Math.random() * 1000)
+    setTimeout(Making_something, Items_random)
 
+    
+}
+function Making_something()
+{
+    var the_Background = document.getElementById("Messages_" + The_number)
+    var One_of_the_messages_1 = document.getElementById("One_of_the_messages_" + The_number)
     var The_body = document.createElement("div")
     var The_user_Name_Ling = document.createElement("a")
     var The_text_for_the_TUNL = document.createElement("p")
     var The_main_text = document.createElement("p")
     //the class name and href
+   
     The_body.className = "The_Bot_Messages"
     The_user_Name_Ling.href = "King_ErrorNotJoin.html"
     //textconte
     The_text_for_the_TUNL.textContent = The_bot_name
     The_main_text.textContent = The_aw
+    One_of_the_messages_1.textContent = The_aw
     //appenchild(What Is Going on here)
     the_Background.appendChild(The_body)
     The_body.appendChild(The_user_Name_Ling)
     The_body.appendChild(The_main_text)
     The_user_Name_Ling.appendChild(The_text_for_the_TUNL)
     //
-    
 }
 function The_New_style()
 {
