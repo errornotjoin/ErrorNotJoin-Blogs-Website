@@ -15,10 +15,8 @@ function Getting_The_Items_and_Numbers(Numbers)
         var User_1 = document.getElementById("User_" + x )
         if(x == Numbers)
         {
-            var Name_3 = document.getElementById("Name_" + Numbers)
             You_is_this_going.textContent = Name_3.textContent
             Messages_Picker.style.display = "inline"
-            User_1.style.display = "inline"
             console.log(Numbers);
             The_number = Numbers
             The_bot_name = Name_3.textContent
@@ -26,7 +24,7 @@ function Getting_The_Items_and_Numbers(Numbers)
         }
         else
         {
-            User_1.style.display = "none"
+           
             Messages_Picker.style.display = "none"
         }
 
@@ -73,21 +71,40 @@ Submit.addEventListener("click", function New_updateing(New_number)
         case "what is your name":
             var What = Math.round(Math.random() * 2)
             The_aw = a[What]
-            Making_the_items_for_the_user_and_bot(The_aw)
+            Making_the_items_for_the_user_and_bot(The_aw, User_Input.value)
         break;
 
     }
 })
-function Making_the_items_for_the_user_and_bot(The_aw)
+function Making_the_items_for_the_user_and_bot(The_aw, The_USer_text)
 {
-    //getting/making the items
+    
+    //Making The User Items/Getting
     var the_Background = document.getElementById("Messages_" + The_number)
+    var The_User_body = document.createElement("div")
+    var The_link_to_the_user = document.createElement("a")
+    var The_name_of_the_user = document.createElement("p")
+    var The_user_text = document.createElement("p")
+    //
+    The_User_body.className = "The_User_messages"
+    The_link_to_the_user.href = ""
+    The_name_of_the_user.textContent = "User"
+    The_user_text.textContent = User_Input.value
+    //
+    the_Background.appendChild(The_User_body)
+    The_User_body.appendChild(The_user_text)
+    The_User_body.appendChild(The_link_to_the_user)
+    The_link_to_the_user.appendChild(The_name_of_the_user)
+
+    //getting/making the items
+
     var The_body = document.createElement("div")
     var The_user_Name_Ling = document.createElement("a")
     var The_text_for_the_TUNL = document.createElement("p")
     var The_main_text = document.createElement("p")
-    //the class name
+    //the class name and href
     The_body.className = "The_Bot_Messages"
+    The_user_Name_Ling.href = "King_ErrorNotJoin.html"
     //textconte
     The_text_for_the_TUNL.textContent = The_bot_name
     The_main_text.textContent = The_aw
