@@ -125,3 +125,10 @@ input:hover,button:hover
         box-shadow: 10px 10px 10px black;
     }
 }
+@media (max-width:1309px) {
+    .Main_webste_footer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

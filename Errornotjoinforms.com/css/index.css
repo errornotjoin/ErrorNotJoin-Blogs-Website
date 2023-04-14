@@ -44,3 +44,20 @@
     border: #202336 3px solid;
     text-shadow: 10px 10px 10px black;
 }
+@media (max-width:835px) {
+    .Under_div
+    {
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        position: relative;
+        left: 3%;
+    }
+    .Under_div div
+    {
+        position: relative;
+        left: 3%;
+        width: 95%;
+    }
+}

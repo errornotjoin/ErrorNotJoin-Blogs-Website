@@ -90,3 +90,99 @@
     grid-template-columns: 45% 45%;
 
 }
+@media (max-width:1525px) {
+    .What_i_made
+    {
+        position: relative;
+        bottom: 423px;
+    }
+}
+@media (max-width:1425px) {
+    .What_i_made
+    {
+        position: relative;
+        bottom: 415px;
+    }
+}
+@media (max-width:1347px) {
+    .What_i_made
+    {
+        position: relative;
+        bottom: 405px;
+    }
+}
+@media (max-width:1061px) {
+    .error
+    {
+        display: grid;
+        grid-template-columns: 35% 45%;
+    }
+    .Form_Items_User
+    {
+        position: relative;
+        left: 55%;
+        display: flex;
+        gap: 45%;
+        
+    }
+    .Bottom_Itmes
+    {
+        position: relative;
+        top: 10px;
+        left: 1%;
+        grid-template-columns: 30% 30% 30%;
+        width: 95%;
+    }
+    .What_i_made
+    {
+        position: relative;
+        top: 50px;
+        left: 2%;
+        width: 95%;
+    }
+    .User_made_account
+    {
+        position: relative;
+        left: 1%;
+        width: 95%;
+        top: 10px;
+        z-index: 1;
+    }
+}
+@media (max-width:537px) {
+    .User_made_account
+    {
+        width: 100%;
+        position: relative;
+        left: 0.5%;
+    }
+    .Bottom_Itmes
+    {
+        width: 100%;
+    }
+    .What_i_made
+    {
+        position: relative;
+        bottom: 0px;
+        width: 100%;
+        left: 1%;
+    }
+    .Main_webste_footer
+    {
+        display: flex;
+        flex-direction:column;
+    }
+    .error
+    {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .Form_Items_User
+    {
+        display: flex;
+        position: relative;
+        gap: 10%;
+        left: 10%;
+    }
+}
