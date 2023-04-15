@@ -16,7 +16,7 @@ switch(Main_code.textContent)
     case "User Made Forms":
         Amout = 3
     break;
-    case "ErrorNotjoin Blogs":
+    case "ErrorNotjoin Blogs - ErrorNotJoin Blogs":
         Amout = 7
         break;
 }

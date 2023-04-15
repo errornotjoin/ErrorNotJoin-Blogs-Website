@@ -7,22 +7,22 @@
     <link rel="shortcut icon" type="image/png" href="imgs/errornotjoin.png"> 
     <link href="css/Main_header_and_footer.css" rel="stylesheet">
     <link href="css/errornotjoin.css" rel="stylesheet">
-    <title>ErrorNotjoin Blogs - ErrorNotJoin Blogs</title>
+    <title id="Main_code">ErrorNotjoin Blogs - ErrorNotJoin Blogs</title>
 </head>
 <body>
     <header class="Main_header">
         <a href="index.html"><h1>ErrorNotJoin.com</h1></a>
-        <h1></h1>
-        <h1></h1>
-        <h1></h1>
-        <h1 id="Main_code"><u>ErrorNotjoin Blogs</u></h1>
     </header>
     <main>
-        <div class="Main_pf">
+        <header class="Other_header">
+            <button onclick="Drop_down_for_errornojoin_form(1)">View The Owner</button> 
+            <button onclick="Drop_down_for_errornojoin_form(2)">View New Subscribers</button>
+        </header>
+        <div class="Main_pf" id="Drop_down_1">
             <a href="King_ErrorNotJoin.html">
                 <img src="imgs/errornotjoin.png">
                 <p style="display: none;">View</p>
-                <h1>ErrorNotJoin</h1>
+                <h1 class="World">ErrorNotJoin</h1>
             </a>
             <div>
                 <p>Blogs Was Made On 29/03/23<br> At <time>21:44pm</time></p>
@@ -32,12 +32,11 @@
                     <p>Subscript:<br/> 3</p>
                     <p id="Total_Likes">Likes:</p>
                     <p id="Total_dislikes">Disliks:</p>
-                    
                 </div>
             </div>
         </div>
-        <div class="subscribers_join">
-            <h1>People Just subscribers</h1>
+        <div class="subscribers_join" id="Drop_down_2">
+            <h1 class="World">People Just subscribers</h1>
             <div class="People_just_subscribe">
                 <a href="King_ErrorNotJoin.html">
                     <div class="New_subs_users">
@@ -174,5 +173,6 @@
         </div>
     </footer>
     <script src="js/Maths_for_picking_a_number.js"></script>
+    <script src="js/Drop_downs.js"></script>
 </body>
 </html>

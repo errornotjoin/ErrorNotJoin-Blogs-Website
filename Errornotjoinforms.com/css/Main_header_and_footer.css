@@ -35,8 +35,6 @@ input:hover,button:hover
 .Main_header
 {
     color: snow;
-    display: flex;
-    flex-direction: row;
     gap: 8%;
     background-color: #181a29;
     border-radius: 10px;
@@ -130,5 +128,12 @@ input:hover,button:hover
     {
         display: flex;
         flex-direction: column;
+    }
+}
+@media (max-width: 1525px) {
+    .Main_form_bit
+    {
+     position: relative;
+     top: 10px;
     }
 }
