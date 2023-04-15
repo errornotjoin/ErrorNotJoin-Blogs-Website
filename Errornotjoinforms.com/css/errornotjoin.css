@@ -31,6 +31,7 @@
 }
 .subscribers_join
 {
+    visibility: visible;
     text-align: center;
     color: snow;
     position: relative;
@@ -180,5 +181,66 @@
 
         position: relative;
         left: 5%;
+    }
+}
+@media (max-width: 961px) {
+    .Main_pf
+    {
+        width: 30%;
+    }
+    .subscribers_join
+    {
+        position: absolute;
+        left: 40%;
+        top: 155px;
+        width: 30%;
+    }
+    .Main_form_bit
+    {
+        position: absolute;
+        top: 200px;
+    }
+    .Main_webste_footer
+    {
+        position: relative;
+        top: 600px;
+    }
+}
+@media (max-width:527px) {
+    .Other_header
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        height: 100px;
+    }
+    .Other_header button
+    {
+        position: relative;
+        left: 0%;
+    }
+    .subscribers_join
+    {
+        width: 100%;
+        position: absolute;
+        top: 740px;
+        left: 0%;
+    }
+    .Main_pf
+    {
+        width: 100%;
+        position: relative;
+        left: 0%;
+    }
+    .Main_form_bit
+    {
+        position: absolute;
+        top: 200px;
+
+    }
+    .Main_webste_footer
+    {
+        position: relative;
+        top: 400px;
     }
 }
